@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>diziaq.so.sample</groupId>
+  <artifactId>sample-so-question-61888059</artifactId>
+  <version>0.0.1</version>
+  <packaging>pom</packaging>
+  <name>sample-question-61888059</name>
+  <description>Demo for public interfaces implicit export</description>
+
+  <modules>
+    <module>sub-donor</module>
+    <module>sub-recipient</module>
+  </modules>
+
+  <properties>
+    <version.java>11</version.java>
+    <encoding.source.code>UTF-8</encoding.source.code>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <encoding>${encoding.source.code}</encoding>
+          <compilerVersion>${version.java}</compilerVersion>
+          <release>${version.java}</release>
+          <source>${version.java}</source>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
